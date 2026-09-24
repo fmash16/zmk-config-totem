@@ -49,7 +49,7 @@
             bindings = <
 &kp Q          &kp W          &kp E          &kp R          &kp T               &kp Y          &kp U          &kp I          &kp O          &kp P
 &kp A          &kp S          &kp D          &kp F          &kp G               &kp H          &kp J          &kp K          &kp L          &kp SEMI 
-&mt LSHFT Z          &kp X          &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &kp DOT        &mt RSHFT FSLH
+&trans &mt LSHFT Z          &kp X          &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &kp DOT        &mt RSHFT FSLH &trans
 &kp LCTRL      &lt NAV ESC    &kp SPACE                                                                       &lt NUM RET    &lt SYM TAB    &lt BLU BSPC 
             >;
         };
@@ -59,7 +59,7 @@
             bindings = <
 &kp LA(TAB)       &kp LA(N1)        &kp LA(N2)        &kp LA(N3)        &kp LA(N4)        &kp LA(N5)             &kp LA(N6)        &kp LA(N7)         &kp LA(N8)        &kp LA(N9)
 &kp LA(A)         &kp LA(S)         &kp LA(D)         &kp LA(F)         &kp LA(G)              &kp LA(H)         &kp LA(J)          &kp LA(K)         &kp LA(L)         &kp LA(SQT)
-&lt ALTSHIFT LA(Z)         &kp LA(X)         &kp LA(C)         &kp LA(V)         &kp LA(B)              &kp LA(N)         &kp LA(M)          &kp LA(COMMA)     &kp LA(DOT)       &kp LA(FSLH)
+&trans &lt ALTSHIFT LA(Z)         &kp LA(X)         &kp LA(C)         &kp LA(V) &kp LA(B)              &kp LA(N)         &kp LA(M)          &kp LA(COMMA) &kp LA(DOT)       &kp LA(FSLH) &trans
 &kp LA(LCTRL)     &lt NAV ESC    &kp SPACE                                                                       &lt NUM LA(RET)   &lt SYM LA(TAB)    &lt BLU BSPC 
             >;
         };
@@ -69,7 +69,7 @@
             bindings = <
 &kp F12        &kp F7         &kp F8         &kp F9     &trans         &kp C_VOL_UP    &kp N7         &kp N8         &kp N9                &trans
 &kp F11        &kp F4         &kp F5         &kp F6     &kp LCTRL      &kp C_VOL_DN    &kp N4         &kp N5         &kp N6                &kp N0
-&kp F10        &kp F1         &kp F2         &kp F3     &trans         &trans          &kp N1         &kp N2         &kp N3                &trans
+&trans &kp F10        &kp F1         &kp F2         &kp F3     &trans &trans          &kp N1         &kp N2         &kp N3                &trans &trans
 &kp LCTRL      &lt NAV ESC    &kp SPACE                                                               &lt NUM RET    &bootloader    &kp LGUI 
             >;
         };
@@ -79,7 +79,7 @@
             bindings = <
 &kp Q          &kp W          &kp E          &kp R          &kp T               &kp Y          &kp U          &kp I          &kp O          &kp P
 &kp A          &kp S          &kp D          &kp F          &kp G               &kp H          &kp J          &kp K          &kp L          &kp SEMI 
-&kp Z          &kp X          &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &kp DOT        &mt RSHFT FSLH
+&trans &kp Z          &kp X          &kp C          &kp V          &kp B               &kp N          &kp M          &kp COMMA      &kp DOT        &mt RSHFT FSLH &trans
 &kp LCTRL      &lt NAV ESC    &kp SPACE                                                                       &lt NUM RET    &lt SYM TAB    &lt BLU BSPC 
             >;
         };
@@ -88,8 +88,7 @@
             
             bindings = <
 &kp LS(N1)     &kp LS(N2)     &kp LS(N3)     &kp LS(N4)     &kp LS(N5)          &kp LS(N6)    &kp LS(N7)      &kp LS(N8)     &kp LS(N9)     &kp LS(N0)
-&kp DEL        &kp TILDE      &kp LBKT       &kp RBKT       &kp PIPE            &kp LEFT      &kp DOWN        &kp UP         &kp RIGHT      &kp SQT 
-&kp LGUI       &kp GRAVE      &kp LBRC       &kp RBRC       &kp BSLH            &kp UNDER     &kp MINUS       &kp PLUS       &kp EQUAL      &kp DQT 
+&kp DEL        &kp TILDE      &kp LBKT       &kp RBKT       &kp PIPE            &kp LEFT      &kp DOWN        &kp UP         &kp RIGHT      &kp SQT &trans &kp LGUI       &kp GRAVE      &kp LBRC       &kp RBRC       &kp BSLH &kp UNDER     &kp MINUS       &kp PLUS       &kp EQUAL      &kp DQT  &trans
 &kp LCTRL      &lt NAV ESC    &kp SPACE                                                                       &lt NUM RET    &lt SYM BSPC    &lt BLU TAB 
             >;
         };
@@ -99,7 +98,7 @@
             bindings = <
 &kp LS(LA(Q))         &kp LS(LA(N1))        &kp LS(LA(N2))        &kp LS(LA(N3))        &kp LS(LA(N4))             &kp LS(LA(N5))        &kp LS(LA(N6))         &kp LS(LA(N7))        &kp LS(LA(N8))        &kp LS(LA(N9))
 &kp LS(LA(A))         &kp LS(LA(S))         &kp LS(LA(D))         &kp LS(LA(F))         &kp LS(LA(G))              &kp LS(LA(H))         &kp LS(LA(J))          &kp LS(LA(K))         &kp LS(LA(L))         &kp LS(LA(SQT))
-&kp LS(LA(Z))         &kp LS(LA(X))         &kp LS(LA(C))         &kp LS(LA(V))         &kp LS(LA(B))              &kp LS(LA(N))         &kp LS(LA(M))          &kp LS(LA(COMMA))     &kp LS(LA(DOT))       &kp LS(LA(FSLH))
+&trans &kp LS(LA(Z))         &kp LS(LA(X))         &kp LS(LA(C))         &kp LS(LA(V))         &kp LS(LA(B))              &kp LS(LA(N))         &kp LS(LA(M))          &kp LS(LA(COMMA))     &kp LS(LA(DOT))       &kp LS(LA(FSLH)) &trans
 &kp LCTRL      &lt NAV ESC    &kp SPACE                                                                       &lt NUM RET    &lt SYM ESC    &lt BLU BSPC 
             >;
         };
@@ -113,7 +112,7 @@
 
 &trans         &trans         &bt BT_CLR     &bt BT_PRV     &bt BT_NXT          &trans      &msc SCRL_DOWN    &msc SCRL_UP      &mkp MB4          &mkp MB5
 &trans         &bt BT_SEL 3   &bt BT_SEL 4   &trans         &trans              &mmv MOVE_LEFT  &mmv MOVE_DOWN    &mmv MOVE_UP      &mmv MOVE_RIGHT   &out OUT_TOG
-&trans         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans              &trans          &mkp LCLK         &mkp RCLK         &trans            &trans
+&trans &trans         &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &trans &trans          &mkp LCLK         &mkp RCLK         &trans            &trans &trans
 &kp LCTRL      &lt NAV ESC    &kp SPACE                                                                       &lt NUM RET    &lt SYM ESC    &lt BLU BSPC 
             >;
         };
